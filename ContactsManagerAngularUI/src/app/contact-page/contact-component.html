@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Manager</title>
+</head>
+<body>
+<h1 align="center">Contacts Manager</h1>
+<h2>Contacts Data</h2>
+<table>
+    <tr>
+        <td>
+        <table class="table">
+            <tr>
+                <th>Sr. No.</th>
+                <th>First Name</th>
+                <th>Second Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Status (IsActive)</th>
+            </tr>
+            <tr *ngFor="let contact of _contacts;let i=index">
+                <td>{{i+1}}</td>
+                <td>{{contact.FirstName}}</td>
+                <td>{{contact.LastName}}</td>
+                <td>{{contact.Email}}</td>
+                <td>{{contact.PhoneNumber}}</td>
+                <td>{{contact.Status}}</td>
+                <td>
+                    <Button (click)="editRowClicked(i)">Edit</Button>
+                </td>
+                <td>
+                    <Button (click)="deleteRowClicked(i)">Delete</Button>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+        </td>
+        <td>
+            <table name="addEditTable" *ngIf="_isAddEditPaneVisible">
+                <tr>
+                    <td colspan="2" align="center">
+                    Add/Edit Pane
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>First Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="fname" [(ngModel)]="_contactUnderChange.FirstName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Last Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="lname" [(ngModel)]="_contactUnderChange.LastName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Email</label>
+                    </td>
+                    <td>
+                        <input type="text" name="email" [(ngModel)]="_contactUnderChange.Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Phone Number</label>
+                    </td>
+                    <td>
+                        <input type="text" name="phoneNumber" [(ngModel)]="_contactUnderChange.PhoneNumber">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Status(IsActive)</label>
+                    </td>
+                    <td>
+                        <input type="text" name="status" [(ngModel)]="_contactUnderChange.Status">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <button (click)="saveUpdateChanges()">Save Update</button>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<button (click)="addContact()">Add Contact</button>
+<button (click)="getContacts()">Refresh Contacts</button>
+<button (click)="saveContactUpdates()">Save Updates</button>
+    <style>
+        table, th, td {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+            table tr:nth-child(odd) {
+                background-color: #f1f1f1;
+            }
+
+            table tr:nth-child(even) {
+                background-color: #ffffff;
+            }
+    </style>
+</body>
+</html>

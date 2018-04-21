@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactsManagerWebApi", "ContactsManagerWebApi\ContactsManagerWebApi.csproj", "{5846CA9E-AA0F-42A6-BDEB-AB57295D5E2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{85EAC14C-59BC-48C6-A152-8BD6A256507B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{DA755845-1093-4622-AD08-F394480D3E7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{A1E8816B-22A0-4972-AC21-5A8AA85C8D05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryService", "FactoryService\FactoryService.csproj", "{E5F650D6-CE5F-40AD-BAAB-D7B16DDC802A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactsManagerAngularUI", "ContactsManagerAngularUI\ContactsManagerAngularUI.csproj", "{1BFC974A-9388-40E1-A446-EEA077868D06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5846CA9E-AA0F-42A6-BDEB-AB57295D5E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5846CA9E-AA0F-42A6-BDEB-AB57295D5E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5846CA9E-AA0F-42A6-BDEB-AB57295D5E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5846CA9E-AA0F-42A6-BDEB-AB57295D5E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85EAC14C-59BC-48C6-A152-8BD6A256507B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85EAC14C-59BC-48C6-A152-8BD6A256507B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85EAC14C-59BC-48C6-A152-8BD6A256507B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85EAC14C-59BC-48C6-A152-8BD6A256507B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA755845-1093-4622-AD08-F394480D3E7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA755845-1093-4622-AD08-F394480D3E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA755845-1093-4622-AD08-F394480D3E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA755845-1093-4622-AD08-F394480D3E7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1E8816B-22A0-4972-AC21-5A8AA85C8D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E8816B-22A0-4972-AC21-5A8AA85C8D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E8816B-22A0-4972-AC21-5A8AA85C8D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E8816B-22A0-4972-AC21-5A8AA85C8D05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F650D6-CE5F-40AD-BAAB-D7B16DDC802A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F650D6-CE5F-40AD-BAAB-D7B16DDC802A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F650D6-CE5F-40AD-BAAB-D7B16DDC802A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F650D6-CE5F-40AD-BAAB-D7B16DDC802A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BFC974A-9388-40E1-A446-EEA077868D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BFC974A-9388-40E1-A446-EEA077868D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BFC974A-9388-40E1-A446-EEA077868D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BFC974A-9388-40E1-A446-EEA077868D06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0BA7FEAC-E485-4257-A511-8F396D52D057}
+	EndGlobalSection
+EndGlobal
